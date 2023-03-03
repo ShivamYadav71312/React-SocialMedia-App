@@ -1,0 +1,21 @@
+.Friend{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.FriendPic{
+    object-fit: cover;
+    height: 32px;
+    width: 32px;
+    border: 2px solid var(--Lotion);
+    margin-right: 15px;
+    border-radius: 50%;
+}
+
+.FriendName{
+        color: var(--Lotion);
+    
+}

@@ -1,0 +1,13 @@
+.homecontainer{
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media (max-width:500px){
+    .homecontainer{
+        display: flex;
+        width: 100vw;
+        overflow-x: hidden;
+    }
+}

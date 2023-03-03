@@ -1,0 +1,214 @@
+:root{
+    /* Dark-color-theme */
+    --Arsenic: #333948;     /* Darkest color 2nd */
+    --outerSpace:#3f4e59;   /* Darkest color 3rd */
+    --Feldgrau: #4B585D;    /* Darkest color 4th */
+    --graniteGray: #606766; /* Darkest color 5th */
+    --CrayolaOuterSpace: #2f3242; /* Darkest color 1st */
+
+    /* Light-color-theme */
+    --PastelBlue: #B7C7D5;   /* Lightest color 5th aka light pastelblue */
+    --ColumbiaBlue: #CBD5E1;    /* Lightest color 4th */
+    --Gainsboro: #D3DDEA;   /* Lightest color 3rd */
+    --AzureishWhite: #E0E6F4;   /* Lightest color 2nd */
+    --Lotion: #FDFDFD;   /* Lightest color 1st white */
+    --PastelBlueD: #AEBDCA;  /* Lightest color 6th blue aka dark pastelblue */
+}
+
+.topbarContainer{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--graniteGray);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.topbarLeft{
+    flex: 3;
+}
+
+.navSwitchOpen, .navSwitchClose{
+    display: none;
+}
+
+.NavLogoOpen, .NavLogoClose{
+    display: none;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    color: var(--Lotion);
+    cursor: pointer;
+}
+
+.topbarCenter{
+    flex: 5;
+}
+
+.Searchbar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    background-color: var(--Lotion);
+    border-radius: 32px;
+}
+
+.searchIcon{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.searchInput{
+    width: 70%;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+}
+
+.topbarRight{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.topbarLinks{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.ThemeSwitch{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: var(--Lotion); 
+    background-color: var(--Arsenic);
+    height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.modeSwitchBtn{
+    background-color: var(--graniteGray);
+    border: none;
+    color: var(--Lotion);
+}
+
+.modeSwitch{
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.topbarIcons{
+    display: flex;
+    align-items: center;
+}
+
+.topbarIcon{
+    display: flex;
+}
+
+.topbarIconLogo{
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    color: var(--Lotion);
+    height: 25px;
+    width: 25px;
+}
+
+.iconBadge{
+    height: 15px !important;
+    width: 15px !important;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    top: -5px;
+    right: 18px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.profilePic{
+    height: 32px;
+    width: 32px;
+    margin-right: 15px;
+    border-radius: 50%;
+    border: 2px solid var(--Lotion);
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {   
+    .topbarContainer{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        background-color: var(--graniteGray);
+        position: sticky;
+        top: 0;
+        z-index: 999;
+    }
+    .topbarLeft{
+        flex: 2;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .NavLogoOpen{
+        height: 25px;
+        width: 25px;
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .NavLogoOpenHide{
+        display: none;
+    }
+
+    .NavLogoClose{
+        display: none ;
+    }
+
+    .NavLogoCloseHide{
+        display: inline-block;
+        height: 25px;
+        width: 25px;
+        margin-left: 10px;
+    }
+
+    .logo{
+        margin-right: 25px;
+    }
+
+    .topbarCenter{
+    display: none;
+    }
+
+    .topbarRight{
+        flex: 1;
+        justify-content: flex-end;
+     }
+
+    .topbarLinks{
+        display: none;
+    }
+
+    .topbarIcon{
+        display: none;
+    }
+
+    .profilePic{
+        margin-right: 10px;
+    }
+}

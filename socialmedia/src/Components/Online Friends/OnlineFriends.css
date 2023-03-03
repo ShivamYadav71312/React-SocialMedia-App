@@ -1,0 +1,48 @@
+:root{
+    --Arsenic: #333948;     /* Darkest color 2nd */
+    --outerSpace:#3f4e59;   /* Darkest color 3rd */
+    --Feldgrau: #4B585D;    /* Darkest color 4th */
+    --graniteGray: #606766; /* Darkest color 5th */
+    --CrayolaOuterSpace: #2f3242; /* Darkest color 1st */
+    --Black: black; /* black color */
+    --PastelBlue: #B7C7D5;   /* Lightest color 5th aka light pastelblue */
+    --ColumbiaBlue: #CBD5E1;    /* Lightest color 4th */
+    --Gainsboro: #D3DDEA;   /* Lightest color 3rd */
+    --AzureishWhite: #E0E6F4;   /* Lightest color 2nd */
+    --Lotion: #FDFDFD;   /* Lightest color 1st white */
+    --PastelBlueD: #AEBDCA;  /* Lightest color 6th blue aka dark pastelblue */
+}
+
+.friends{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+    cursor: pointer;
+    width: 165px;
+}
+
+.friendPic{
+    object-fit: cover;
+    height: 32px;
+    width: 32px;
+    position: relative;
+    border: 2px solid var(--Lotion);
+    margin-right: 0px;
+    border-radius: 50%;
+}
+
+.activeOnline{
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: green;
+    position: relative;
+    top: -12px;
+    right: 10px;
+}
+
+.friendName{
+    color: var(--Lotion);
+}

@@ -1,0 +1,97 @@
+:root{
+    /* Dark-color-theme */
+    --Arsenic: #333948;     /* Darkest color 2nd */
+    --outerSpace:#3f4e59;   /* Darkest color 3rd */
+    --Feldgrau: #4B585D;    /* Darkest color 4th */
+    --graniteGray: #606766; /* Darkest color 5th */
+    --CrayolaOuterSpace: #2f3242; /* Darkest color 1st */
+
+    /* Light-color-theme */
+    --PastelBlue: #B7C7D5;   /* Lightest color 5th aka light pastelblue */
+    --ColumbiaBlue: #CBD5E1;    /* Lightest color 4th */
+    --Gainsboro: #D3DDEA;   /* Lightest color 3rd */
+    --AzureishWhite: #E0E6F4;   /* Lightest color 2nd */
+    --Lotion: #FDFDFD;   /* Lightest color 1st white */
+    --PastelBlueD: #AEBDCA;  /* Lightest color 6th blue aka dark pastelblue */
+}
+
+.leftSidebarContainer{
+    flex: 3;
+    background-color: var(--outerSpace);
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    position: sticky;
+    top: 0;
+}
+
+.leftsidebarWrapper{
+    padding: 20px;
+}
+
+.list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.listitem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.listitemLogo{
+    margin-right: 15px;
+    height: 20px;
+    width: 20px;
+    color: var(--Lotion);
+}
+
+.listitemtext{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.sidebarbutton{
+    width: 150px;
+    height: 50px;
+    border: none;
+    font-size: 20px;
+    background-color: var(--PastelBlueD);
+    color: var(--Lotion);
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.sidebarhr{
+    margin: 20px 0;
+}
+
+.friendList{
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.Chats{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 500px) {
+    .leftSidebarContainer{
+        display:none;
+    };
+
+    .sidebarhr{
+        display: none;
+    }
+    
+    .friendList{
+       display: none;
+    }
+}
